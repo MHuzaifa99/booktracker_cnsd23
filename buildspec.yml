@@ -52,7 +52,7 @@ phases:
     #file-format: JunitXml | CucumberJson
 artifacts:
   files:
-    - target/app.jar
+    - target/bookApi.jar
     # - location
   #name: $(date +%Y-%m-%d)
   #discard-paths: yes
