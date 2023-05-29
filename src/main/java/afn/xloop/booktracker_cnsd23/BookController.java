@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/books")
+@RequestMapping("/")
 public class BookController {
     private final BookRepository repo;
 
@@ -22,7 +22,7 @@ public class BookController {
     }
 
     // localhost:8080/books
-    @PostMapping("/add")
+    @PostMapping("")
     public Response createBook(@RequestBody Book book) {
         this.repo.save(book);
         Book getBook = this.repo.getBook(book.getId());
