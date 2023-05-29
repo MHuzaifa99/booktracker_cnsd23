@@ -28,10 +28,13 @@ phases:
     #commands:
       # - command
       # - command
-  pre_build:
-    commands:
-      - apt install java-17-amazon-corretto-devel -y
-      - alternatives --set java /usr/lib/jvm/java-17-amazon-corretto.aarch64/bin/java
+    install:
+    runtime-versions:
+      java: corretto-17
+  # pre_build:
+  #   commands:
+  #     - apt install java-17-amazon-corretto-devel -y
+  #     - alternatives --set java /usr/lib/jvm/java-17-amazon-corretto.aarch64/bin/java
   build:
     commands:
       - echo starting build
