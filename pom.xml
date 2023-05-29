@@ -55,6 +55,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>bookApi</finalName>
 	</build>
 
 </project>
