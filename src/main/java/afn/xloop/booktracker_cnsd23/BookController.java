@@ -22,7 +22,7 @@ public class BookController {
     }
 
     // localhost:8080/books
-    @PostMapping("")
+    @PostMapping("/add")
     public Response createBook(@RequestBody Book book) {
         this.repo.save(book);
         Book getBook = this.repo.getBook(book.getId());
@@ -30,7 +30,7 @@ public class BookController {
         return res;
     }
 
-    @GetMapping("/getBook")
+    @GetMapping("")
     public Response getAllBooks(@RequestParam(name = "id", required = false) Integer id) {
         Object book;
         if (id != null) {
