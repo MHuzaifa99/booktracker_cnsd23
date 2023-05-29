@@ -30,7 +30,7 @@ phases:
       # - command
   install:
     runtime-versions:
-      java: corretto-17
+      java: corretto17
   # pre_build:
   #   commands:
   #     - apt install java-17-amazon-corretto-devel -y
