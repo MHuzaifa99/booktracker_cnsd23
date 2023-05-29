@@ -28,7 +28,7 @@ phases:
     #commands:
       # - command
       # - command
-    install:
+  install:
     runtime-versions:
       java: corretto-17
   # pre_build:
